@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise For You 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Immersive Intro -->
+    <div class="intro-scene" id="introContainer">
+        <div class="intro-bg-waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+        </div>
+        <div class="intro-glass-card">
+            <h1 class="elegant-title">A Moment for You</h1>
+            <p class="elegant-subtitle">Wait... something special is waiting inside.</p>
+            <div class="teddy-portal">
+                <img src="assets/teddy.svg" alt="Teddy" class="main-teddy" id="teddyBtn">
+                <div class="pulse-hint">Tap with Love</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Artistic Split Surprise -->
+    <div class="surprise-scene" id="splitScreen">
+        <!-- Left Artistic Half -->
+        <div class="art-half photo-section">
+            <div class="texture-overlay"></div>
+            <div class="bokeh-container">
+                <div class="bokeh"></div>
+                <div class="bokeh"></div>
+                <div class="bokeh"></div>
+            </div>
+            <div class="floating-petals">
+                <span>🌸</span><span>🌹</span><span>✨</span><span>🌸</span><span>🌹</span>
+            </div>
+            <!-- Scrapbook Decorations -->
+            <div class="scrapbook-decor sticker-1">💖</div>
+            <div class="scrapbook-decor sticker-2">✨</div>
+            <div class="scrapbook-decor sticker-3">🌸</div>
+            <div class="love-script">You & Me</div>
+
+            <div class="gallery-frame">
+                <div class="polaroid-stack">
+                    <div class="polaroid main-photo">
+                        <img src="assets/Snapchat-11905092.jpg" alt="Our Moment">
+                        <div class="photo-date">Always & Forever</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Artistic Half -->
+        <div class="art-half message-section">
+            <div class="texture-overlay"></div>
+            <div class="ribbon">🎀</div>
+            <div class="confetti-container">
+                <span class="confetti">💕</span><span class="confetti">✨</span><span class="confetti">🌸</span>
+            </div>
+            <div class="letter-container">
+                <div class="letter-paper">
+                    <div class="letter-header">
+                        <span class="seal">❤️</span>
+                        <h2 class="animate-line">My Dearest,</h2>
+                    </div>
+                    <div class="letter-body">
+                        <p class="animate-line">When I see you, the whole world seems to slow down. It's like every star
+                            in the sky decided to shine just for us.</p>
+                        <p class="animate-line quote">"I found the home I was searching for in your eyes."</p>
+                        <p class="animate-line">Thank you for being the most beautiful part of my story.</p>
+                    </div>
+                    <div class="letter-footer">
+                        <h3 class="animate-line">Yours, Truly.</h3>
+                        <button id="toLastPage" class="next-page-btn">Continue to my heart ✨</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Page: Immersive Heart Dashboard -->
+    <div class="last-page" id="lastPage">
+        <div class="texture-overlay"></div>
+
+        <!-- Premium Animated Background -->
+        <div class="dashboard-bg">
+            <div class="glow-circle gc1"></div>
+            <div class="glow-circle gc2"></div>
+        </div>
+
+        <div class="final-dashboard">
+            <!-- Left Panel: Memory Gallery (Template) -->
+            <div class="dashboard-panel gallery-panel">
+                <h2 class="panel-title">Our Memories ✨</h2>
+                <div class="photo-grid">
+                    <div class="photo-slot">
+                        <img src="assets/Snapchat-1690636211.jpg" alt="Memory 1" class="template-img">
+                        <span>Beautiful Day</span>
+                    </div>
+                    <div class="photo-slot">
+                        <img src="assets/Snapchat-740523684.jpg" alt="Memory 2" class="template-img">
+                        <span>Forever</span>
+                    </div>
+                    <div class="photo-slot">
+                        <img src="assets/photo.jpg" alt="Memory 3" class="template-img">
+                        <span>Pure Joy</span>
+                    </div>
+                    <div class="photo-slot">
+                        <img src="assets/Snapchat-111608062.jpg" alt="Memory 4" class="template-img">
+                        <span>Us</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Panel: The Core (Video) -->
+            <div class="dashboard-panel video-panel">
+                <div class="video-container-premium">
+                    <video id="finalVideo" controls preload="auto" playsinline>
+                        <source src="assets/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- Envelope placed below video -->
+                <div class="envelope-area">
+                    <div class="envelope-wrapper" id="envelopeWrapper">
+                        <div class="envelope">
+                            <div class="flap"></div>
+                            <div class="body"></div>
+                        </div>
+                        <div class="envelope-hint">Click for a message 💌</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Hidden Letter (Reveals here) -->
+            <div class="dashboard-panel letter-panel" id="letterPanel">
+                <div class="letter-placeholder">
+                    <p>Click the envelope to read my heart... ✨</p>
+                </div>
+                <div class="letter-content-active">
+                    <div class="long-letter-paper">
+                        <div class="letter-scroll">
+                            <h2 class="letter-main-title">A letter from my heart ❤️</h2>
+                            <p>Every time I see you, all the happy moments I spent with you come back to my mind. Those
+                                memories always make me smile. Honestly, I’ve been truly happy because of you.</p>
+                            <p>But sometimes I wonder whether I made you as happy as you made me. I feel like I may have
+                                hurt you many times, even if I never meant to. Maybe I made mistakes without realizing
+                                it… If I did, please forgive me.</p>
+                            <p>You mean so much to me. I really like you more than words can explain, and all I ever
+                                wanted was to keep you happy. Sometimes I don’t know the perfect way to express it, but
+                                my feelings for you are always real.</p>
+                            <p>The happiest phase of my life was the time I spent with you. The way you made me feel
+                                loved, comfortable, and genuinely happy is something I can never forget. Thank you for
+                                bringing so much happiness into my life.</p>
+                            <p>I promise I’ll always try my best to protect your happiness and take care of your heart.
+                                And if I’ve ever done anything wrong, I truly hope you can forgive me.</p>
+                            <p>There’s one more thing I want you to always remember…</p>
+                            <p class="emphasized">I will never betray you. I will always be honest with you, loyal to
+                                you, and my love will always belong only to you. 🎀</p>
+                            <p>No matter what happens, my feelings for you will always stay special. ✨</p>
+                            <h3 class="final-signature">Love You Forever ✨❤️</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
