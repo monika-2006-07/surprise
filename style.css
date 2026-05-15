@@ -745,11 +745,140 @@ body {
     padding-top: 10px;
 }
 
-@media (max-width: 1000px) {
-    .final-dashboard {
+/* --- RESPONSIVE DESIGN --- */
+
+@media (max-width: 768px) {
+    /* Global fixes */
+    body { overflow-y: auto; height: auto; }
+    
+    /* Intro Scene */
+    .elegant-title { font-size: 2rem; }
+    .intro-glass-card { padding: 2rem; width: 95%; }
+
+    /* Surprise Scene (Page 2) */
+    .surprise-scene {
         flex-direction: column;
-        overflow-y: auto;
         height: auto;
     }
-    .dashboard-panel { height: auto; min-height: 400px; }
+    
+    .art-half {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+
+    .photo-section {
+        clip-path: none;
+    }
+
+    .message-section {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .polaroid img {
+        width: 85vw;
+        height: auto;
+        aspect-ratio: 3/4;
+    }
+
+    .letter-paper {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .love-script {
+        font-size: 2.5rem;
+        left: 10%;
+        top: 5%;
+    }
+
+    /* Last Page (Dashboard) */
+    .last-page {
+        position: relative;
+        min-height: 100vh;
+        height: auto;
+        overflow-y: auto;
+        padding: 20px 10px;
+        display: block; /* Stack panels vertically */
+    }
+
+    .final-dashboard {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .dashboard-panel {
+        width: 100%;
+        min-height: auto;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    /* Gallery on Mobile */
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .photo-slot span {
+        font-size: 1.2rem;
+    }
+
+    /* Video on Mobile */
+    .video-panel {
+        order: -1; /* Put video at top on mobile */
+    }
+
+    .video-container-premium {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .video-container-premium video {
+        width: 100%;
+        height: auto;
+    }
+
+    .envelope-area {
+        height: 120px;
+    }
+
+    .envelope-wrapper {
+        width: 180px;
+        height: 110px;
+    }
+
+    /* Letter on Mobile */
+    .letter-panel {
+        min-height: 300px;
+    }
+
+    .letter-content-active {
+        position: relative; /* Allow scrolling within the flow */
+        transform: none;
+        opacity: 1;
+        display: none;
+        padding: 10px 0;
+    }
+
+    .letter-panel.open .letter-content-active {
+        display: block;
+    }
+
+    .long-letter-paper {
+        padding: 25px;
+    }
+
+    .letter-scroll {
+        font-size: 1.2rem;
+    }
+
+    .letter-main-title {
+        font-size: 1.5rem;
+    }
 }
